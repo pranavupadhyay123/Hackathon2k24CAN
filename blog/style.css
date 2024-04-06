@@ -502,3 +502,11 @@
   .bg-white {
     background-color: #fff;
   }
+  .text-white {
+    color: white;
+}
+  /* Hover effect */
+  .hover-element:hover {
+    background-color: #f0f0f0; /* Change to your desired hover color */
+    cursor: pointer; /* Optional: Change cursor style on hover */
+  }
