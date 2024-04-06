@@ -54,4 +54,3 @@ If you'd like to contribute to this project, please fork the repository, make yo
 Thank you for using and contributing to the Career Roadmap website! If you have any questions or feedback, feel free to reach out to us at [contact@careerroadmap.co](mailto:contact@careerroadmap.co).
 
 ---
-**Note:** This project is provided as-is without any warranty. We are not responsible for any damages or losses incurred through the use of this software.
