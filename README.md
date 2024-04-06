@@ -28,6 +28,3 @@ there will be the option to apply all this will apply all the intern or jobs by 
 you can directly email any recuiter directly from the application
 
 you will get the mail from the recuiter about selection or rejection
-
-# FOR recuiter
-
