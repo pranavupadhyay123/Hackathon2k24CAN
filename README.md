@@ -41,9 +41,9 @@ code .
 Here's a brief overview of the project structure:
 
 - `index.html`: The main HTML file containing the structure of the website.
-- `css/`: Directory containing CSS stylesheets.
-- `js/`: Directory containing JavaScript files.
-- `img/`: Directory containing image files used in the website.
+- `Templates/`: Directory containing All html files.
+- `src/`: Directory containing image files, CSS files and Js files used in the website.
+- `CNAME` : Domain Name
 
 Feel free to explore and modify the source code to suit your needs!
 
