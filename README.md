@@ -1,43 +1,57 @@
-# Hackathon2k24CAN
+# Career Roadmap Website
 
-## Idea List
+Welcome to the Career Roadmap website project! This repository contains the source code for the Career Roadmap website, deployed at 
+# [CareerRoadmap.co](https://www.careerroadmap.co)
 
-This project aims to create a comprehensive platform for job seekers and recruiters. Here's an overview of the features:
+## How to Run
 
-### Login Page
-- Users can log in using their email address.
-- Option for users to specify whether they are a job seeker or a recruiter during registration.
+To run this project locally on your machine, follow these simple steps:
 
-### For Job Seekers
+### Prerequisites
 
-#### Profile Creation
-- Users can create their profiles with the following details:
-  - Email
-  - Phone number
-  - Name
-  - Gender
-  - Country
-  - Resume
-  - CV
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/download) or any other text editor of your choice.
+- [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VS Code (optional but recommended).
 
-#### Search Options
-- Job seekers can search for opportunities based on:
-  - Domain of study
-  - Remote or full-time positions
-  
-#### Search Sorting
-- After searching, job seekers can sort results based on:
-  - Closest distance
-  - Highest paying
+### Steps
 
-#### Application Process
-- Users can easily apply to jobs by selecting an option and having their details automatically filled from their profile.
-- Option to apply to all matching jobs or internships with a single click, saving time and increasing the probability of selection.
+1. Clone this repository to your local machine:
 
-#### Direct Communication
-- Job seekers can directly email recruiters from the application interface.
+```
+git clone https://github.com/your-username/career-roadmap.git
+```
 
-#### Notification System
-- Users receive email notifications from recruiters regarding the status of their applications (selection or rejection).
+2. Navigate into the project directory:
 
-This platform aims to streamline the job search process for job seekers and simplify recruitment processes for recruiters.
+```
+cd career-roadmap
+```
+
+3. Open the project directory in VS Code:
+
+```
+code .
+```
+
+4. Once you have VS Code open, right-click on the `index.html` file and select the "Open with Live Server" option. This will launch the website in your default web browser. Alternatively, you can use any other live server extension or simply open the `index.html` file directly in your browser.
+
+5. Voila! You should now see the Career Roadmap website running locally on your machine.
+
+## Project Structure
+
+Here's a brief overview of the project structure:
+
+- `index.html`: The main HTML file containing the structure of the website.
+- `css/`: Directory containing CSS stylesheets.
+- `js/`: Directory containing JavaScript files.
+- `img/`: Directory containing image files used in the website.
+
+Feel free to explore and modify the source code to suit your needs!
+
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. We welcome contributions of all kinds, including bug fixes, feature enhancements, and design improvements.
+
+Thank you for using and contributing to the Career Roadmap website! If you have any questions or feedback, feel free to reach out to us at [contact@careerroadmap.co](mailto:contact@careerroadmap.co).
+
+---
+**Note:** This project is provided as-is without any warranty. We are not responsible for any damages or losses incurred through the use of this software.
