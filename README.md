@@ -1,30 +1,43 @@
-"# Hackathon2k24CAN" 
-# idea list
-login page with email only
+# Hackathon2k24CAN
 
-there will be the option for recuiter of job seeker during registration 
+## Idea List
 
-# FOR job seeker
+This project aims to create a comprehensive platform for job seekers and recruiters. Here's an overview of the features:
 
-# profile creation
-mail 
-number 
-name 
-sex 
-country 
-resume
-cv
+### Login Page
+- Users can log in using their email address.
+- Option for users to specify whether they are a job seeker or a recruiter during registration.
 
-# search options
-domain of study
-remote or full time
+### For Job Seekers
 
-## after searching there will be sorting options to sort with closest distance, highest paying
+#### Profile Creation
+- Users can create their profiles with the following details:
+  - Email
+  - Phone number
+  - Name
+  - Gender
+  - Country
+  - Resume
+  - CV
 
-you can apply by just choosing any application and then it will automatically take your detailes from profile options 
+#### Search Options
+- Job seekers can search for opportunities based on:
+  - Domain of study
+  - Remote or full-time positions
+  
+#### Search Sorting
+- After searching, job seekers can sort results based on:
+  - Closest distance
+  - Highest paying
 
-there will be the option to apply all this will apply all the intern or jobs by itself in one click which will save time and increase the probablity of selection in the job
+#### Application Process
+- Users can easily apply to jobs by selecting an option and having their details automatically filled from their profile.
+- Option to apply to all matching jobs or internships with a single click, saving time and increasing the probability of selection.
 
-you can directly email any recuiter directly from the application
+#### Direct Communication
+- Job seekers can directly email recruiters from the application interface.
 
-you will get the mail from the recuiter about selection or rejection
+#### Notification System
+- Users receive email notifications from recruiters regarding the status of their applications (selection or rejection).
+
+This platform aims to streamline the job search process for job seekers and simplify recruitment processes for recruiters.
