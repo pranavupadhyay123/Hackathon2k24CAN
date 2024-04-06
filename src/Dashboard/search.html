@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-details {
+            margin-top: 5px;
+        }
+        .apply-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .applied {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <label><input type="checkbox" id="remote-checkbox"> Remote Jobs</label>
+        <label><input type="checkbox" id="fulltime-checkbox"> Full Time Jobs</label>
+    </div>
+
+    <div id="job-list">
+        <div class="card" data-title="Software Developer" data-type="fulltime">
+            <div class="job-title">Software Developer</div>
+            <div class="job-details">
+                <span>Type: Full Time</span><br>
+                <span>Location: New York</span><br>
+                <span>Experience: 3+ years</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+        <div class="card" data-title="Data Analyst" data-type="remote">
+            <div class="job-title">Data Analyst</div>
+            <div class="job-details">
+                <span>Type: Remote</span><br>
+                <span>Location: Any</span><br>
+                <span>Experience: 2+ years</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+        <div class="card" data-title="UX Designer" data-type="fulltime">
+            <div class="job-title">UX Designer</div>
+            <div class="job-details">
+                <span>Type: Full Time</span><br>
+                <span>Location: San Francisco</span><br>
+                <span>Experience: 5+ years</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+        <div class="card" data-title="Graphic Designer" data-type="remote">
+            <div class="job-title">Graphic Designer</div>
+            <div class="job-details">
+                <span>Type: Remote</span><br>
+                <span>Location: Any</span><br>
+                <span>Experience: 2+ years</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+        <div class="card" data-title="Product Manager" data-type="fulltime">
+            <div class="job-title">Product Manager</div>
+            <div class="job-details">
+                <span>Type: Full Time</span><br>
+                <span>Location: Seattle</span><br>
+                <span>Experience: 7+ years</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const remoteCheckbox = document.getElementById('remote-checkbox');
+        const fulltimeCheckbox = document.getElementById('fulltime-checkbox');
+        const jobList = document.getElementById('job-list');
+
+        // Apply button event listener
+        function applyButtonHandler(event) {
+            const card = event.target.closest('.card');
+            if (card) {
+                const title = card.dataset.title;
+                card.querySelector('.apply-btn').classList.add('applied');
+                card.querySelector('.apply-btn').disabled = true;
+                saveAppliedJob(title);
+            }
+        }
+
+        // Save applied job to local storage
+        function saveAppliedJob(title) {
+            localStorage.setItem(title, 'applied');
+        }
+
+        function filterJobs() {
+            const searchQuery = searchInput.value.toLowerCase();
+            const isRemote = remoteCheckbox.checked;
+            const isFulltime = fulltimeCheckbox.checked;
+
+            const cards = jobList.getElementsByClassName('card');
+
+            Array.from(cards).forEach(card => {
+                const title = card.dataset.title.toLowerCase();
+                const type = card.dataset.type;
+
+                const showCard = title.includes(searchQuery) &&
+                                (isRemote ? type === 'remote' : true) &&
+                                (isFulltime ? type === 'fulltime' : true);
+
+                card.style.display = showCard ? 'block' : 'none';
+            });
+        }
+
+        searchInput.addEventListener('input', filterJobs);
+        remoteCheckbox.addEventListener('change', filterJobs);
+        fulltimeCheckbox.addEventListener('change', filterJobs);
+
+        // Apply button event delegation
+        jobList.addEventListener('click', applyButtonHandler);
+
+        // Initial filtering
+        filterJobs();
+
+        // Check local storage for applied jobs on page load
+        window.onload = function() {
+            const cards = jobList.getElementsByClassName('card');
+            Array.from(cards).forEach(card => {
+                const title = card.dataset.title;
+                if (localStorage.getItem(title) === 'applied') {
+                    card.querySelector('.apply-btn').classList.add('applied');
+                    card.querySelector('.apply-btn').disabled = true;
+                }
+            });
+        };
+    </script>
+</body>
+</html>
