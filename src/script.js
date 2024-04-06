@@ -1,4 +1,4 @@
-// Tiny Slider
+
 
 var slider = tns({
     container: ".slider",
@@ -13,7 +13,6 @@ var slider = tns({
     controlsPosition: "bottom",
   });
   
-  // ScrollReveal JS
   
   ScrollReveal({ distance: "30px", easing: "ease-in" });
   
@@ -32,18 +31,15 @@ var slider = tns({
     origin: "bottom",
   });
   
-  // Form
   
   const emailId = document.getElementById("email-id");
   const error = document.getElementById("error");
   const mailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   
-  //! get the cursor position in the input
   emailId.addEventListener("keyup", (e) => {
     console.log("Caret at: ", e.target.selectionStart);
   });
   
-  //! show whether the email address is valid or not with an outline
   emailId.addEventListener("input", (e) => {
     const emailInputValue = e.currentTarget.value;
     if (
@@ -56,19 +52,17 @@ var slider = tns({
     }
   });
   
-  //! if email address is empty, remove the outline from the input
   function checkEmpty() {
     if (emailId.value == "") {
       emailId.style.outline = "none";
     }
   }
   
-  //! submit the email address
   form.addEventListener("submit", (e) => {
     if (emailId.value.match(mailRegex)) {
       e.preventDefault();
       form.innerHTML = `<p style="font-size: 2rem; font-weight: 500; color: rgb(118, 167, 63);">Subscribed! 🎉</p>`;
-       // setTimeout("location.reload(true);", 2000);
+    
       setTimeout(() => { 
         window.location.href = "#card-container";
   }, 1700);
@@ -78,7 +72,6 @@ var slider = tns({
     }
   });
   
-  //! typing animation for the placeholder
   let i = 0;
   let placeholder = "";
   const txt = "example@domain.com";
@@ -95,14 +88,13 @@ var slider = tns({
     setTimeout(type, speed);
   }
   
-  // Vanilla-Tilt JS
   
   var VanillaTilt = (function () {
     "use strict";
   
     /**
      * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
-     * Original idea: https://github.com/gijsroge/tilt.js
+     * Original idea: http
      * MIT License.
      * Version 1.8.1
      */
@@ -122,7 +114,7 @@ var slider = tns({
         this.left = null;
         this.top = null;
   
-        // for Gyroscope sampling
+    
         this.gammazero = null;
         this.betazero = null;
         this.lastgammazero = null;
@@ -487,9 +479,9 @@ var slider = tns({
        * and sets the default style
        */
       prepareGlare() {
-        // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+    
         if (!this.glarePrerender) {
-          // Create glare element
+      
           const jsTiltGlare = document.createElement("div");
           jsTiltGlare.classList.add("js-tilt-glare");
   

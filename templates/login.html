@@ -132,10 +132,10 @@
 				var storedData = JSON.parse(localStorage.getItem('userData'));
 	
 				if (storedData && email === storedData.email && password === storedData.password) {
-					// Redirect to dashboard if credentials are valid
+					
 					window.location.href = "/templates/dashboard.html";
 				} else {
-					// Show error message or handle invalid credentials
+					
 					alert("Invalid credentials");
 				}
 			}
