@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https:
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         .card {
@@ -91,7 +91,7 @@
         const fulltimeCheckbox = document.getElementById('fulltime-checkbox');
         const jobList = document.getElementById('job-list');
 
-        // Apply button event listener
+        
         function applyButtonHandler(event) {
             const card = event.target.closest('.card');
             if (card) {
@@ -102,7 +102,7 @@
             }
         }
 
-        // Save applied job to local storage
+        
         function saveAppliedJob(title) {
             localStorage.setItem(title, 'applied');
         }
@@ -130,13 +130,13 @@
         remoteCheckbox.addEventListener('change', filterJobs);
         fulltimeCheckbox.addEventListener('change', filterJobs);
 
-        // Apply button event delegation
+        
         jobList.addEventListener('click', applyButtonHandler);
 
-        // Initial filtering
+        
         filterJobs();
 
-        // Check local storage for applied jobs on page load
+        
         window.onload = function() {
             const cards = jobList.getElementsByClassName('card');
             Array.from(cards).forEach(card => {

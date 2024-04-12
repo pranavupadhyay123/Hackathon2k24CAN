@@ -1,30 +1,56 @@
-"# Hackathon2k24CAN" 
-# idea list
-login page with email only
+# Career Roadmap Website
 
-there will be the option for recuiter of job seeker during registration 
+Welcome to the Career Roadmap website project! This repository contains the source code for the Career Roadmap website, deployed at 
+# [CareerRoadmap.co](https://www.careerroadmap.co)
 
-# FOR job seeker
+## How to Run
 
-# profile creation
-mail 
-number 
-name 
-sex 
-country 
-resume
-cv
+To run this project locally on your machine, follow these simple steps:
 
-# search options
-domain of study
-remote or full time
+### Prerequisites
 
-## after searching there will be sorting options to sort with closest distance, highest paying
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/download) or any other text editor of your choice.
+- [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VS Code (optional but recommended).
 
-you can apply by just choosing any application and then it will automatically take your detailes from profile options 
+### Steps
 
-there will be the option to apply all this will apply all the intern or jobs by itself in one click which will save time and increase the probablity of selection in the job
+1. Clone this repository to your local machine:
 
-you can directly email any recuiter directly from the application
+```
+git clone https://github.com/your-username/career-roadmap.git
+```
 
-you will get the mail from the recuiter about selection or rejection
+2. Navigate into the project directory:
+
+```
+cd career-roadmap
+```
+
+3. Open the project directory in VS Code:
+
+```
+code .
+```
+
+4. Once you have VS Code open, right-click on the `index.html` file and select the "Open with Live Server" option. This will launch the website in your default web browser. Alternatively, you can use any other live server extension or simply open the `index.html` file directly in your browser.
+
+5. Voila! You should now see the Career Roadmap website running locally on your machine.
+
+## Project Structure
+
+Here's a brief overview of the project structure:
+
+- `index.html`: The main HTML file containing the structure of the website.
+- `Templates/`: Directory containing All html files.
+- `src/`: Directory containing image files, CSS files and Js files used in the website.
+- `CNAME` : Domain Name
+
+Feel free to explore and modify the source code to suit your needs!
+
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. We welcome contributions of all kinds, including bug fixes, feature enhancements, and design improvements.
+
+Thank you for using and contributing to the Career Roadmap website! If you have any questions or feedback, feel free to reach out to us at [contact@careerroadmap.co](mailto:contact@careerroadmap.co).
+
+---
